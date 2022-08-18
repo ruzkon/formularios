@@ -9,12 +9,19 @@
 <body>
     
     <form action="/proyecto/infoformulario/" method="post"> {% csrf_token %} 
-
-        <input type="text" placeholder="Ingrese su nombre"name= "nombre">
-        <input type="email" placeholder="Ingres su email" name="email">
-        <input type="password" placeholder="Ingrese su contraseña" name="password">
+        <p> 
+            Ingrese su nombre
+            <input type="text" name= "nombre">
+        </p>
+        <p> 
+            Ingrese su email
+            <input type="email" name= "email">
+        </p>
+        <p> 
+            Ingrese su password
+            <input type="password" name="password">
+        </p>
         <input type="submit" value="enviar">
- 
     </form>
 
 </body>
